@@ -48,24 +48,25 @@
 
 #define QWERTY &to 0
 
-#define colemak_layer 1
-#define COLEMAK &to colemak_layer
-
-#define plover_layer 2
-#define PLOVER &to plover_layer
-
-#define pinky_layer 3
+#define pinky_layer 1
 #define PINKY(kp) &ltp pinky_layer kp
 
-#define nav_layer 4
+#define nav_layer 2
 #define NAVFN &lt nav_layer SPC
 
-#define num_layer 5
+#define num_layer 3
 #define NUMFN(kp) &lt num_layer kp
 #define NUM &mo num_layer
 
-#define fn_layer 6
+#define fn_layer 4
 #define FN &mo fn_layer
+
+//#define colemak_layer 1
+//#define COLEMAK &to colemak_layer
+
+//#define plover_layer 2
+//#define PLOVER &to plover_layer
+
 
 / {
         keymap {
@@ -110,8 +111,8 @@
                 fn_layer {
                         bindings = <
    QWERTY   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5               &kp F6     &kp F7   &kp F8   &kp F9   &kp F10  &trans
-   COLEMAK  &trans   &trans   &trans   &trans   &trans               &trans     &kp F4   &kp F5   &kp F6   &kp F11  &trans
-   PLOVER   &trans   &trans   &trans   &trans   &trans &trans &trans &bt BT_CLR &kp F1   &kp F2   &kp F3   &kp F12  &trans
+   &trans   &trans   &trans   &trans   &trans   &trans               &trans     &kp F4   &kp F5   &kp F6   &kp F11  &trans
+   &trans   &trans   &trans   &trans   &trans   &trans &trans &trans &bt BT_CLR &kp F1   &kp F2   &kp F3   &kp F12  &trans
                                   &trans &trans &trans &trans &trans &trans &trans &trans
                         >;
                 };
