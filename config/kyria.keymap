@@ -113,11 +113,11 @@
                 _TAB,  &kp Q, &kp W, &kp E, &kp R, &kp T,
                 _ESC,  &kp A, &kp S, &kp D, &kp F, &kp G,
                 _LSFT, &kp Z, &kp X, &kp C, &kp V, &kp B, _LSFT, _LSFT,
-                                     _FN,   _LCTL, _LALT, _LGUI, _NUM
+                                     _FN,   _LCTL, _LALT, _LGUI, _NUM,
 
-                              &kp Y, &kp U, &kp I, &kp O, &kp P, _MUTE
-                              &kp H, &kp J, &kp K, &kp L, _SCLN, _SQT
-                _RSFT, _RSFT, &kp N, &kp M, _CMMA, _DOT,  _FSLH, _RET
+                              &kp Y, &kp U, &kp I, &kp O, &kp P, _MUTE,
+                              &kp H, &kp J, &kp K, &kp L, _SCLN, _SQT,
+                _RSFT, _RSFT, &kp N, &kp M, _CMMA, _DOT,  _FSLH, _RET,
                 _NUM,  _NAV,  _RSFT, _RCTL, _FN
             );
         };
