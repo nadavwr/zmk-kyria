@@ -96,7 +96,7 @@
         default_layer {
             bindings = <
     &kp TAB  &kp Q &kp W &kp E &kp R &kp T                                     &kp Y &kp U &kp I    &kp O    &kp P       &kp K_MUTE
-    _LCTL    AS(A) &kp S &kp D &kp F &kp G                                     &kp H &kp J &kp K    &kp L    PINKY(SCLN) &kp SQT
+    _LCTL    &kp LS(A) &kp S &kp D &kp F &kp G                                 &kp H &kp J &kp K    &kp L    PINKY(SCLN) &kp SQT
     &kp LSFT &kp Z &kp X &kp C &kp V &kp B &kp LSFT &kp LSFT &kp LSFT &kp LSFT &kp N &kp M &kp CMMA &kp DOT  &kp FSLH    _RET
                       FN &kp LCTL &kp LALT _GUISPC  NUM      NUM      NAVFN    &kp LSFT &kp RCTL FN
             >;
