@@ -41,6 +41,7 @@
 //#define plover_layer 2
 //#define PLOVER &to plover_layer
 
+#define TAPPING_TERM 200
 #define AS(k) &asft k LS(k)
 #define BINDINGS(                            \
     k00, k01, k02, k03, k04, k05,            \
@@ -60,7 +61,6 @@
 
 
 / {
-    #define TAPPING_TERM 200
     behaviors {
         ltp: behavior_layer_tap_permissive {
             compatible = "zmk,behavior-hold-tap";
