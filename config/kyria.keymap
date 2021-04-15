@@ -8,15 +8,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define _LMEH &mt LC(LA(LSFT))        TAB
-#define _LHPR &mt LS(LC(LA(LSFT)))    TAB
-#define _RMEH &mt RC(RA(RSFT))        BKSP
-#define _RHPR &mt RS(RC(RA(RSFT)))    BKSP
-#define _LCTL &mt LCTL ESC
-#define _RCTL &mt RCTL SQT
-#define _LSFT &mtp LSFT Z
-#define _RSFT &mtp RSFT FSLH
-#define _RET  &mt RSFT RET
+#define _LCTL   &mt LCTL ESC
+#define _RET    &mt RSFT RET
 #define _GUISPC &mt LGUI SPC
 
 
@@ -41,6 +34,7 @@
 //#define plover_layer 2
 //#define PLOVER &to plover_layer
 
+/*
 #define TAPPING_TERM 200
 #define AS(k) &asft k LS(k)
 #define BINDINGS(                            \
@@ -58,9 +52,10 @@
      k10 k11 k12 k13 k14 k15                 k1a k1b k1c k1d k1e k1f  \
      k20 k21 k22 k23 k24 k25 k26 k27 k28 k29 k2a k2b k2c k2d k2e k2f  \
              k32 k33 k34 k35 k36 k37 k38 k39 k3a k3b k3c k3d>;
-
+*/
 
 / {
+/*
     behaviors {
         ltp: behavior_layer_tap_permissive {
             compatible = "zmk,behavior-hold-tap";
@@ -90,6 +85,7 @@
             bindings = <&kp>, <&kp>;
         };
     };
+*/
 
     keymap {
         compatible = "zmk,keymap";
@@ -97,8 +93,8 @@
         default_layer {
             bindings = <
     &kp TAB  &kp Q &kp W &kp E &kp R &kp T                                     &kp Y &kp U &kp I    &kp O    &kp P       &kp K_MUTE
-    _LCTL    AS(A) &kp S &kp D &kp F &kp G                                     &kp H &kp J &kp K    &kp L    PINKY(SCLN) &kp SQT
-    &kp LSFT &kp Z &kp X &kp C &kp V &kp B &kp LSFT &kp LSFT &kp LSFT &kp LSFT &kp N &kp M &kp CMMA &kp DOT  &kp FSLH    &kp RET
+    _LCTL    &kp A &kp S &kp D &kp F &kp G                                     &kp H &kp J &kp K    &kp L    PINKY(SCLN) &kp SQT
+    &kp LSFT &kp Z &kp X &kp C &kp V &kp B &kp LSFT &kp LSFT &kp LSFT &kp LSFT &kp N &kp M &kp CMMA &kp DOT  &kp FSLH    _RET
                       FN &kp LCTL &kp LALT _GUISPC  NUM      NUM      NAVFN    &kp LSFT &kp RCTL FN
             >;
         };
