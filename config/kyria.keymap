@@ -56,7 +56,7 @@
 
 
 / {
-/*
+
     behaviors {
         ltp: behavior_layer_tap_permissive {
             compatible = "zmk,behavior-hold-tap";
@@ -86,7 +86,9 @@
             bindings = <&kp>, <&kp>;
         };
     };
-*/
+};
+
+/ {
 
     keymap {
         compatible = "zmk,keymap";
