@@ -15,7 +15,7 @@
 
 #define QWERTY &to 0
 
-#define ltp lt
+//#define ltp lt
 #define pinky_layer 1
 #define PINKY(kp) &ltp pinky_layer kp
 
