@@ -117,8 +117,8 @@
 
                               &kp Y, &kp U, &kp I, &kp O, &kp P, _MUTE,
                               &kp H, &kp J, &kp K, &kp L, _SCLN, _SQT,
-                _RSFT, _RSFT, &kp N, &kp M, _CMMA, _DOT,  _FSLH, _RET,
-                _NUM,  _NAV,  _RSFT, _RCTL, _FN
+                _LSFT, _LSFT, &kp N, &kp M, _CMMA, _DOT,  _FSLH, _RET,
+                _NUM,  _NAV,  _LSFT, _RCTL, _FN
             );
         };
 
