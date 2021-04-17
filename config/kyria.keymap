@@ -105,7 +105,6 @@
 
 
 #define TAPPING_TERM 200
-#define AS(kp) &asft LS(kp) kp
 #define BINDINGS(                            \
     k00, k01, k02, k03, k04, k05,            \
     k10, k11, k12, k13, k14, k15,            \
@@ -140,14 +139,6 @@
             tapping_term_ms = <TAPPING_TERM>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
-        };
-
-        asft: behavior_autoshift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "AUTOSHIFT";
-            tapping-term-ms = <TAPPING_TERM>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&tap>;
         };
     };
 };
