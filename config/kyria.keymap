@@ -161,7 +161,7 @@
             bindings = BINDINGS(
                 _TAB,  &kp Q, &kp W, &kp E, &kp R, &kp T,
                 _ESC,  &kp A, &kp S, &kp D, &kp F, &kp G,
-                _LSFT, &kp Z, &kp X, &kp C, &kp V, &kp B, _ALT,  _LSFT,
+                _LSFT, &kp Z, &kp X, &kp C, &kp V, &kp B, _LALT, _LSFT,
                                      _____, _____, _LSFS, _LGUI, _NUM,
 
                               &kp Y, &kp U, &kp I, &kp O, &kp P, _MUTE,
