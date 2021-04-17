@@ -19,6 +19,7 @@
 #define _ESC    &mt LCTL ESC
 #define _FSLH   &kp FSLH
 #define _GRAV   &kp GRAV
+#define _LALS   &mt LALT SPC
 #define _LALT   &kp LALT
 #define _LBKT   &kp LBKT
 #define _LBRC   &kp LBRC
@@ -29,6 +30,7 @@
 #define _LSFT   &kp LSFT
 #define _MINS   &kp MINUS
 #define _MUTE   &kp K_MUTE
+#define _RALS   &mt RALT SPC
 #define _RALT   &kp RALT
 #define _RBKT   &kp RBKT
 #define _RBRC   &kp RBRC
@@ -84,11 +86,11 @@
 #define default_layer 0
 #define _QWERTY &to default_layer
 
-#define nav_layer 1
-#define _NAV &lt nav_layer SPC
-
-#define num_layer 2
+#define num_layer 1
 #define _NUM &mo num_layer
+
+#define nav_layer 2
+#define _NAV &lt nav_layer SPC
 
 #define symbol_layer 3
 #define SYMBOL(kp) &ltp symbol_layer kp
@@ -155,12 +157,26 @@
                 _TAB,  &kp Q, &kp W, &kp E, &kp R, &kp T,
                 _ESC,  &kp A, &kp S, &kp D, &kp F, &kp G,
                 _LSFT, &kp Z, &kp X, &kp C, &kp V, &kp B, _LALT, _LSFT,
-                                     _____, _____, _LSFS, _LGUI, _NUM,
+                                     _LCTL, _LALT, _LSFS, _LGUI, _NUM,
 
                               &kp Y, &kp U, &kp I, &kp O, &kp P, _MUTE,
                               &kp H, &kp J, &kp K, &kp L, _SCLN, _SQT,
                 _RSFT, _RSFT, &kp N, &kp M, _CMMA, _DOT,  _FSLH, _RSFR,
-                _NUM,  _NAV,  _RSFS, _____, _____
+                _NUM,  _NAV,  _RALS, _____, _____
+            );
+        };
+
+        num_layer {
+            bindings = BINDINGS(
+                _____, _N1,   _N2,   _N3,   _N4,   _N5,
+                _____, _____, _____, _____, _____, _____,
+                _____, _____, _____, _____, _____, _____, _____, _____,
+                                     _____, _____, _____, _____, _FN,
+
+                              _N6,   _N7,   _N8,   _N9,   _N0,   _____,
+                              _____, _N4,   _N5,   _N6,   _____, _____,
+                _____, _____, _N0,   _N1,   _N2,   _N3,   _____, _____,
+                _FN,   _____, _N0,   _____, _____
             );
         };
 
@@ -175,20 +191,6 @@
                               _____, _LEFT, _DOWN, _RGHT, _RET,  _____,
                 _____, _____, _____, _____, _PGUP, _PGDN, _____, _____,
                 _____, _____, _____, _____, _____
-            );
-        };
-
-        num_layer {
-            bindings = BINDINGS(
-                _____, _N1,   _N2,   _N3,   _N4,   _N5,
-                _____, _____, _____, _____, _____, _____,
-                _____, _____, _____, _____, _____, _____, _____, _____,
-                                     _____, _____, _____, _____, _FN,
-
-                              _N6,   _N7,   _N8,   _N9,   _N0,   _____,
-                              _____, _N4,   _N5,   _N6,   _____, _____,
-                _____, _____, _N0,   _N1,   _N2,   _N3,   _____, _____,
-                _FN,   _____, _____, _____, _____
             );
         };
 
