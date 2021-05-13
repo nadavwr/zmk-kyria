@@ -168,6 +168,7 @@
                 _____, _RSFT, &kp N, &kp M, _CMMA, _DOT,  _FSLH, _RSFR,
                 _FN,   _NUM,  _NAV, _RSFT, _____
             );
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp UP DOWN>;
         };
 
         num_layer {
@@ -182,6 +183,7 @@
                 _____, _____, _N0,   _N1,   _N2,   _N3,   _____, _____,
                 _FN,   _____, _N0,   _____, _____
             );
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
         };
 
         nav_layer {
@@ -196,6 +198,7 @@
                 _____, _____, _____, _____, _PGUP, _PGDN, _____, _____,
                 _____, _____, _____, _____, _____
             );
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp PG_UP PG_DN>;
         };
 
         symbol_layer {
@@ -210,6 +213,7 @@
                 _____, _____, _FSLH, _BSLH, _CMMA, _DOT,  _____, _____,
                 _____, _____, _____, _____, _____
             );
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp UP DOWN>;
         };
 
         fn_layer {
@@ -224,6 +228,7 @@
                 _____,   _____, _____, _F1,   _F2,   _F3,   _F12,  _____,
                 _____,   _____, _____, _____, _____
             );
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
     };
